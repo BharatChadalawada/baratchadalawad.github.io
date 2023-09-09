@@ -6415,17 +6415,20 @@ body {
 
 /* Style each column */
 .custom-col-md-4 {
-    /* flex: 0 0 calc(33.333% - 20px); Adjust the width as needed */
-    margin: 10px; /* Add margin between columns */
-}
+    width: 33%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+} 
 
 /* Style the rows within columns */
-.custom-row {
+/* .custom-row {
+    display: -ms-flexbox;
     display: flex;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: space-between; /* Spread items horizontally */
-    align-items: center; /* Center items vertically */
-}
+} */
 
 /* Style the images and descriptions within rows */
 .imgprop {

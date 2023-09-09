@@ -38,14 +38,6 @@
 <body>
   <script>
     AOS.init();
-    const navbar = document.querySelector('header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        navbar.classList.remove('navbar-transparent');
-      } else {
-        navbar.classList.add('navbar-transparent');
-      }
-    });
   </script>
   <!-- Nav Bar Code Start Here -->
   <div class="header-page">
@@ -536,6 +528,16 @@
     </div>
   </div>
   <!-- Contact Code end here -->
+  <script>
+       const navbar = document.querySelector('nav.navbar-transparent');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 100) {
+        navbar.classList.remove('navbar-transparent');
+      } else {
+        navbar.classList.add('navbar-transparent');
+      }
+    }); 
+  </script>
 </body>
 
 </html>
