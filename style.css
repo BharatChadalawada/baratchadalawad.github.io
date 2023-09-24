@@ -6276,6 +6276,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
+    text-align: center;
     transform-origin: 100% 0;
     transform: rotateZ(90deg)
 }
